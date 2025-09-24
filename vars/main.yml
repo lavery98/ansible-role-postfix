@@ -31,5 +31,6 @@ _postfix_compatibility_level:
   jammy: 3.6
   noble: 3.6
   bookworm: 3.6
+  trixie: 3.9
 
 postfix_compatibility_level: "{{ _postfix_compatibility_level[ansible_distribution_release] | default(_postfix_compatibility_level['default']) }}"
